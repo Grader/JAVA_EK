@@ -22,10 +22,6 @@ public class Writer {
         return max;
     }
 
-    public int getAttemptCount() {
-        return attemptCount;
-    }
-
     public void check(final Scanner input, final Ugadai ugadai) throws IOException {
         System.out.println("First, set the range");
 
