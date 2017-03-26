@@ -26,10 +26,6 @@ public class Writer {
         return attemptCount;
     }
 
-    public int getTarget() {
-        return target;
-    }
-
     public void check(final Scanner input, final Ugadai ugadai) throws IOException {
         System.out.println("First, set the range");
 
