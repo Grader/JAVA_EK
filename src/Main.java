@@ -10,19 +10,16 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         Scanner input = new Scanner();
-        Writer writer = new Writer();
         do {
-           //Random random = new Random();
+            Writer writer = new Writer();
             GenNumberController g = new GenNumberController();
             CheckNumberController c = new CheckNumberController();
-            int min = writer.getMin();
-            int max = writer.getMax();
             int attemptCount = writer.getAttemptCount();
-            int target = g.generate(min, max);
+            int target = g.generate(writer.getMin(), writer.getMax());
 
             Ugadai ugadai = new Ugadai.UgadaiBuilder()
-                    .setMin(min)
-                    .setMax(max)
+                    .setMin(writer.getMin())
+                    .setMax(writer.getMax())
                     .setAttemptCount(attemptCount)
                     .setTarget(target).createUgadai();
                     writer.check(input, ugadai);
