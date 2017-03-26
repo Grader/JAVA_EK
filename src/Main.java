@@ -10,7 +10,6 @@ public class Main {
         Scanner input = new Scanner();
         do {
             Writer writer = new Writer();
-
             Ugadai ugadai = new Ugadai.UgadaiBuilder()
                     .setMin(writer.getMin())
                     .setMax(writer.getMax())
